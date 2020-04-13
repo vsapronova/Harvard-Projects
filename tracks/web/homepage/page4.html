@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Forth page
+        </title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    </head>
+    <body style="margin-top: 200px; margin-left: 200px">
+        <form onsubmit="calc_inches(); return false" class="pure-form">
+            <div>
+                <label for="meter">Meters</label>
+                <input type="text" id="meter" class="pure-input-rounded">
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+            <div>
+                <label for="inch">Inches</label>
+                <input type="text" id="inch" class="pure-input-rounded">
+            </div>
+        </form>
+        <p>
+            <a href="index.html">Homepage</a>
+        </p>
+        <p>
+            <a href="page2.html">Kilometers to miles</a>
+        </p>
+        <p>
+            <a href="page3.html">Pounds to kilograms</a>
+        </p>
+        <script>
+            function calc_inches()
+            {
+                let meter = document.querySelector("#meter").value;
+                let inches = meter * 39.3701;
+                document.querySelector("#inch").value = inches;
+            }
+        </script>
+    </body>
+</html>

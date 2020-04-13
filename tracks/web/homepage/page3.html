@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Third page
+        </title>
+        <style>
+
+            input[type="text"]
+            {
+              border-radius:5px;
+              -moz-border-radius:5px;
+              -webkit-border-radius:5px;
+              font-size: medium;
+            }
+
+        </style>
+    </head>
+    <body style="margin-top: 200px; margin-left: 200px">
+        <form onsubmit="calc_kilog(); return false">
+            <div>
+                <label for="pounds">Pounds<br></label>
+                <input type="text" style="height: 30px" id="pounds">
+                <input type="submit" style="font-size: medium" id="submit">
+            </div>
+            <div>
+                <p>
+                    <label for="kilog">Kilograms<br></label>
+                    <input type="text" style="height: 30px" id="kilog">
+                </p>
+            </div>
+
+        </form>
+        <p>
+            <a href="index.html">Homepage</a>
+        </p>
+        <p>
+            <a href="page2.html">Kilometers to miles</a>
+        </p>
+        <p>
+            <a href="page4.html">Inches to centimeters</a>
+        </p>
+        <script>
+            function calc_kilog()
+            {
+                let pounds = document.querySelector("#pounds").value;
+                let kilog = pounds/2.20462;
+                document.querySelector("#kilog").value = kilog;
+            }
+        </script>
+    </body>
+</html>

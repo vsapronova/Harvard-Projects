@@ -1,0 +1,26 @@
+body
+{
+    background-color: #ffffff;
+}
+.header
+{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+p
+{
+    text-align:center;
+    font-family: sans-serif;
+    margin-top: 40px;
+    font-size: 20px;
+}
+img
+{
+    margin-left: 600px;
+}
+hr {
+  display: block;
+  border-style: inset;
+  border-width: 2px;
+}
